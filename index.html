@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +8,184 @@
     <link rel="stylesheet" href="style.css">
     <title>InvenIT praksa</title>
 </head>
+
 <body>
     <header>
-<nav class="navbar">
-    <a href=""><div class="logo">
-    <img src="images/invenitlogo-removebg-preview.png" alt="">
-</div>
-</a>
-<ul class="menu">
-<li><a href="https://invenit.io/" target="_blank">O nama</a></li>
-<li><a href="#contact">Kontakt</a></li>
-<li>
-    <div class="menu-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-</li>
-</ul>
-<ul class="menu-items">
-    <li class="menu-item"><a href="">Invenit praksa</a></li>
-    <li class="menu-item"><a href="">Predavač</a></li>
-    <li class="menu-item"><a href="">Polaznici</a></li>
-    <li class="menu-item"><a href="">Galerija</a></li>
-</ul>
-</nav>
+        <nav class="navbar">
+            <a href="">
+                <div class="logo">
+                    <img src="images/invenitlogo-removebg-preview.png" alt="">
+                </div>
+            </a>
+            <ul class="menu">
+                <li><a href="https://invenit.io/" target="_blank">O nama</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li>
+                    <button class="menu-icon" onclick="openCloseMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </button>
+                </li>
+            </ul>
+            <ul id="menu" style="display: none" class="menu-items">
+                <li><a href="">Invenit praksa</a></li>
+                <li><a href="#students">Polaznici</a></li>
+                <li><a href="#teacher">Predavač</a></li>
+                <li><a href="">Galerija</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="home-page">
             <div class="left-column">
                 <h1>Iskustvo koje se ne uči iz knjiga!</h1>
-                <h3>Želiš li steći praktična znanja,upoznati se s 
-                    realnim radnim okruženjem i pripremiti se za 
+                <h3>Želiš li steći praktična znanja,upoznati se s
+                    realnim radnim okruženjem i pripremiti se za
                     tržište rada?
                 </h3>
-                <a href=""><button>Prijavi se</button></a>
+                <a href=""><button class="login-btn">Prijavi se</button></a>
             </div>
             <div class="right-column">
                 <img src="images/slikapraksa.jpg" alt="Slika ne može biti učitana.">
             </div>
-          
-        </section>
-        <section>
 
         </section>
+
+
+        <section class="students" id="students">
+            <h1>Polaznici</h1>
+            <div class="card-container">
+                <div class="card">
+
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/Ja-removebg-preview.png" class="profile">
+                        </div>
+                        <div class="name">Sanjin Babic</div>
+                        <div class="tag">JU Elektrotehnicka skola "Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+                        <h1>Utisak o praksi</h1>
+                        <p>"Jej"</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/Marija-removebg-preview.png" class="profile">
+                        </div>
+                        <div class="name">Marija Markanovic</div>
+                        <div class="tag">JU Elektrotehnicka skola "Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+                        <h1>Utisak o praksi</h1>
+                        <p>"Jej"</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/Marko-removebg-preview.png" class="profile">
+                        </div>
+                        <div class="name">Marko Kunovac</div>
+                        <div class="tag">JU Elektrotehnicka skola "Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+                        <h1>Utisak o praksi</h1>
+                        <p>"Jej"</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/Milan-removebg-preview.png" class="profile">
+                        </div>
+                        <div class="name">Milan Curlic</div>
+                        <div class="tag">JU Elektrotehnicka skola "Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+                        <h1>Utisak o praksi</h1>
+                        <p>"Jej"</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/maric-removebg-preview.png" class="profile">
+                        </div>
+                        <div class="name">Sergej Maric</div>
+                        <div class="tag">JU Elektrotehnicka skola "Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+                        <h1>Utisak o praksi</h1>
+                        <p>"Jej"</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/dejan-removebg-preview.png" class="profile">
+                        </div>
+                        <div class="name">Dejan Grabovica</div>
+                        <div class="tag">JU Elektrotehnicka skola "Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+                        <h1>Utisak o praksi</h1>
+                        <p>"Jej"</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/Aleksa-removebg-preview.png" class="profile">
+                        </div>
+                        <div class="name">Aleka Vidovic</div>
+                        <div class="tag">JU Elektrotehnicka skola "Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+                        <h1>Utisak o praksi</h1>
+                        <p>"Jej"</p>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+
+        <section class="Predavač" id="teacher">
+            <h1>Predavač</h1>
+            <div class="card-container">
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/Maja.png" class="profile">
+                        </div>
+                        <div class="name">Maja Predojevic</div>
+                        <div class="tag">Predavač u kompaniji "InvenIT"</div>
+                    </div>
+                    <div class="back-side">
+                        <h1>Utisak o praksi</h1>
+                        <p>"Jej"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>Galerija</h1>
+        </section>
+
     </main>
     <footer id="contact"></footer>
 </body>
+<script src="script.js"></script>
+
 </html>

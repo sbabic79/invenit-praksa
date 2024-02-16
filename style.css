@@ -19,6 +19,116 @@ html{
     --color-purple:#602080;
 }
 
+main{
+    color: var(--color-gray-d);
+}
+
+h1{
+    font-size: 45px;
+    padding: 15px;
+}
+
+h3{ 
+    padding: 15px;
+}
+
+
+section > h1{
+    padding-top: 70px;
+    color: var(--color-dark);
+    display: flex;
+    justify-content: center;
+}
+
+.images>img{
+    width: 15%;
+    border-radius: 5px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 20px;
+    gap: 15px;
+}
+
+.card{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.front-side{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: var(--color-blue-s);
+    color: #1F2833;
+}
+
+.back-side{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: var(--color-blue-s);
+    color: #1F2833;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.back-side>h1 {
+    font-size: 23px;
+    text-align: center;
+}
+
+.cover>img {
+    width: 140px;
+    height: 170px;
+}
+
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.name{
+    font-size: 27px;
+    text-align: center;
+    padding: 5px;
+}
+
+.tag{
+    font-size:18px ;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p{
+    font-family: cursive;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -31,6 +141,9 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: var(--color-blue-s);
+    align-items: center;
+    padding-inline: 16px;
+    padding-block: 8px ;
 
 }
 
@@ -58,15 +171,91 @@ nav{
     color: var(--color-gray-d);
 }
 
-.menu icon{
+.menu-icon{
     display: flex;
     flex-direction: column;
+    gap: 3px;
+    background-color: transparent;
+    border:none
+}
+
+.menu-icon:hover > .bar{
+     background-color:var(--color-gray-d);
+}
+
+.menu-items{
+    list-style-type:none;
+    position: absolute;
+    top: 52px;
+    right: 0px;
+    text-align: center;
+    background-color: var(--color-gray-d);
+    padding: 10px;
+}
+
+.menu-items > li,a{
+    color:var(--color-dark);
+    text-decoration: none;
+
+}
+
+.menu-items > li{
+    padding: 4px 8px;
+}
+
+.menu-items > li> a:hover{
+    color: var(--color-purple);
 }
 
 .bar{
-    margin: 5px 0;
     border-radius: 5px;
     background-color: var(--color-gray-l);
-    height: 5px;
-    width: 30px;
+    height: 4px;
+    width: 24px;
+}
+
+.right-column > img{
+    width: 100%;
+    border-radius: 40px;
+    border: 10px white solid;
+}
+
+.home-page{
+    display: flex;
+    padding-top: 70px;
+    background-color: var(--color-dark);
+    height: 100vh;
+    gap: 64px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 32px;
+}
+
+.login-btn{
+background-color: #602080;
+border-radius: 40px;
+padding-block: 8px;
+padding-inline: 16px;
+margin-top: 16px;
+font-weight: 500;
+color: white;
+border: none;
+width: 250px;
+}
+
+.login-btn:hover{
+   cursor: pointer;
+   box-shadow: 1px 6px 14px 3px rgba(96,32,128,1);
+}
+
+.right-column{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.left-column{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
 }
